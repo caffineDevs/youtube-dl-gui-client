@@ -6,13 +6,176 @@ function SearchBox() {
   const initialState = {
     inputState: "",
     data: {
-      formats:[]
+      formats: [],
     },
   };
 
   const spinner = (
     <div className="mt-20 sm:mt-40">
-      <img src="/spinner.svg" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="200px"
+        height="200px"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid"
+      >
+        <g transform="rotate(0 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.9230769230769231s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(27.692307692307693 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.8461538461538461s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(55.38461538461539 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.7692307692307693s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(83.07692307692308 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.6923076923076923s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(110.76923076923077 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.6153846153846154s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(138.46153846153845 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.5384615384615384s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(166.15384615384616 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.46153846153846156s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(193.84615384615384 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.38461538461538464s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(221.53846153846155 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.3076923076923077s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(249.23076923076923 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.23076923076923078s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(276.9230769230769 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.15384615384615385s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(304.61538461538464 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="-0.07692307692307693s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+        <g transform="rotate(332.3076923076923 50 50)">
+          <rect x="47" y="18" rx="3" ry="3" width="6" height="6" fill="#e63946">
+            <animate
+              attributeName="opacity"
+              values="1;0"
+              keyTimes="0;1"
+              dur="1s"
+              begin="0s"
+              repeatCount="indefinite"
+            ></animate>
+          </rect>
+        </g>
+      </svg>
     </div>
   );
 
@@ -20,7 +183,7 @@ function SearchBox() {
   const [isInit, setisInit] = useState(true);
 
   const handleQuerySearch = () => {
-    setstate({ ...state, data: {formats:[]} });
+    setstate({ ...state, data: { formats: [] } });
     setisInit(false);
     axios
       .post("https://node-ytdl-gui.herokuapp.com/", { url: state.inputState })
@@ -68,31 +231,6 @@ function SearchBox() {
           spinner
         ) : null}
       </div>
-
-      {/* <main className="font-sans p-8 bg-grey-light">
-        <div className="bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden">
-          <div className="sm:flex sm:items-center px-6 py-4">
-            <img
-              className="block h-16 sm:h-24 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0"
-              src="https://avatars2.githubusercontent.com/u/4323180?s=400&u=4962a4441fae9fba5f0f86456c6c506a21ffca4f&v=4"
-              alt=""
-            />
-            <div className="text-center sm:text-left sm:flex-grow">
-              <div className="mb-4">
-                <p className="text-xl leading-tight">Adam Wathan</p>
-                <p className="text-sm leading-tight text-grey-dark">
-                  Developer at NothingWorks Inc.
-                </p>
-              </div>
-              <div>
-                <button className="text-xs font-semibold rounded-full px-4 py-1 leading-normal bg-white border border-purple text-purple hover:bg-purple hover:text-white">
-                  Message
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main> */}
     </>
   );
 }
